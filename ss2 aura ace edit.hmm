@@ -1,0 +1,41 @@
+Code "SonicParameters-05343526102026"
+//
+	#include "Reflection" noemit
+
+	#lib "Reflection"
+	#lib "SonicParameters"
+//
+{
+	var SonicParametersInfo = Reflection.GetDataInfo<SonicParameters.Root>("player_common");
+
+	if (SonicParametersInfo.pData == null)
+		return;
+
+	RFL_SET_PARAM(SonicParametersInfo, common.supersonic.auraColor2.R, 0.044023786f);
+	RFL_SET_PARAM(SonicParametersInfo, common.supersonic.auraColor2.G, 0.7047716f);
+	RFL_SET_PARAM(SonicParametersInfo, common.supersonic.auraColor2.B, 0.8604651f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.modePackage.jumpSpeed.limitUpSpeed, 40.0f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.modePackage.jumpSpeed.baseAirDragScaleMax, 0.0f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.modePackage.airboost.minHSpeed, 25.0f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.modePackage.airboost.minHSpeedMax, 45.0f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.modePackage.airboost.brakeTime, 1.5f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.modePackage.airboost.maxTime, 1.0f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.modePackage.airboost.gravityRate, 1.2f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.dropDash.brake, 2.5f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.dropDash.steeringSpeed1, 400.0f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.dropDash.steeringSpeed2, 200.0f);
+	RFL_SET_PARAM(SonicParametersInfo, forwardView.spinBoost.chargeRotateForce, 500.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.speed.maxSpeedOver, 30.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.startHSpeed, 45.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.startHSpeedMax, 45.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.startVSpeed, 0.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.minHSpeed, 45.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.minHSpeedMax, 45.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.brakeTime, 9999.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.minKeepTime, 0.15f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.maxTime, 999.0f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.gravityRate, 0.1f);
+	RFL_SET_PARAM(SonicParametersInfo, water.airboost.steeringSpeed, 250.0f);
+	RFL_SET_PARAM(SonicParametersInfo, cyberspace.modePackage.jumpSpeed.baseAirDragScaleMax, 0.0f);
+	RFL_SET_PARAM(SonicParametersInfo, cyberspaceSV.modePackage.jumpSpeed.baseAirDragScaleMax, 0.0f);
+}

@@ -1,0 +1,7 @@
+Patch "DvElementAura Fix" by "Ashrindy"
+WriteProtected<byte>(0x14011FDB3, 0xE9);
+WriteProtected<byte>(0x14011FDB4, 0x7E);
+WriteProtected<byte>(0x14011FDB5, 0x01);
+WriteProtected<byte>(0x14011FDB6, 0x00);
+WriteProtected<byte>(0x14011FDB7, 0x00);
+WriteProtected<byte>(0x14011FDB8, 0x90);
