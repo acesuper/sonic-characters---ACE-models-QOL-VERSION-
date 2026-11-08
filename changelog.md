@@ -2,7 +2,7 @@
 
 ###### Version 1.0
 
-* fixed birthday tails cutscene at the beginning of rhea island
+* 
 
 
 
